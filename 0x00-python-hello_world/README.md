@@ -53,3 +53,15 @@ Tasks
 	- 6-concat.py: print Welcome to Holberton School!
 	- 7-edges.py: completes a source code
 	- 8-concat_edges.py: prints object-oriented programming with Python, followed by a new line.
+	- 10-check_cycle.c: checks if a singly-linked list has a cycle in it
+
+- Advanced
+	- 100-write.py: prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line.
+	- 101-compile: compiles a Python script file.
+	- 102-magic_calculation.py: Python function def magic_calculation(a, b): that does exactly the same as the specifed Bytecode
+		3           0 LOAD_CONST               1 (98)
+			    3 LOAD_FAST                0 (a)
+			    6 LOAD_FAST                1 (b)
+              		    9 BINARY_POWER
+             		    10 BINARY_ADD
+             	   	    11 RETURN_VALUE
