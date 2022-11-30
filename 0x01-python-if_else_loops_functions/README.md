@@ -57,3 +57,4 @@ Tasks
 	- 4-print_hexa.py: prints all numbers from 0 to 98 in decimal and in hexadecimal.
 	- 5-print_comb2.py: prints numbers from 0 to 99.
 	- 6-print_comb3.py: prints all possible different combinations of two digits.
+	- 7-islower.py: contains function that checks for lowercase character.
