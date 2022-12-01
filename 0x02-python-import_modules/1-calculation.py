@@ -12,6 +12,5 @@ def calculator():
     print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
 
 
-
 if __name__ == "__main__":
     calculator()
