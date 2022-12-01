@@ -15,7 +15,7 @@ def print_args():
         print("{:d} arguments.".format(length - 1))
 
     for i in range(1, length):
-        print("{:d} : {}".format(i, argv[i]))
+        print("{:d}: {}".format(i, argv[i]))
 
 
 if __name__ == "__main__":
