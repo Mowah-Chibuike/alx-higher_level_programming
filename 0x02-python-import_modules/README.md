@@ -29,3 +29,4 @@ Tasks
 
 - Advanced
 	- 100-my_calculator.py: program that imports all functions from the file calculator_1.py and handles basic operations.
+	- 101-easy_print.py: program that prints #pythoniscool, followed by a new line, in the standard output.
