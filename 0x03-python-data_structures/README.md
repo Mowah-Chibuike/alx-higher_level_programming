@@ -47,3 +47,4 @@ Requirements
 Tasks
 - Mandatory
 	- 0-print_list_integer.py contains a function that prints all integers of a list.
+	- 1-element_at.py: contains a function that retrieves an element from a list like in C.
