@@ -36,3 +36,6 @@ Tasks
 	- 10-best_score.py: contains a function that returns a key with the biggest integer value.
 	- 11-multiply_list_map.py: contains a function that returns a list with all values multiplied by a number without using any loops.
 	- 12-roman_to_int.py: contains a function that converts a Roman numeral to an integer.
+
+- Advanced
+	- 100-weight_average.py: contains a function that returns the weighted average of all integers tuple (<score>, <weight>)
