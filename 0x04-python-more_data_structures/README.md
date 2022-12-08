@@ -39,3 +39,4 @@ Tasks
 
 - Advanced
 	- 100-weight_average.py: contains a function that returns the weighted average of all integers tuple (<score>, <weight>)
+	- 101-square_matrix_map.py: contains a function that computes the square value of all integers of a matrix using map.
