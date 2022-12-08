@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
 def best_score(a_dictionary):
-    res = max(list(new_dict.values()))
-    return list(filter(lambda x: x[1] == res, list(new_dict.items())))[0][0]
+    if isinstance(a_dictionary, dict) and len(a_dictionary):
+        res = max(list(a_dictionary.values()))
+        return list({x: y for x, y in a_dictionary.items() if y == res}.keys())[0]
