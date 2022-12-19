@@ -8,7 +8,7 @@ def safe_print_list_integers(my_list=[], x=0):
                 print(my_list[i], end="")
                 n += 1
         print()
-    except:
+    except Exception:
         print()
     finally:
         return n
