@@ -22,3 +22,4 @@ Requirements
 Tasks
 - Mandatory
 	- 0-safe_print_list.py: contains a function that prints x elements of a list.
+	- 1-safe_print_integer.py: contains a function that prints an integer with "{:d}".format().
