@@ -31,3 +31,4 @@ Tasks
 
 - Advanced
 	- 100-safe_print_integer_err.py: contains a function that prints an integer.
+	- 101-safe_function.py: contains a function that executes a function safely.
