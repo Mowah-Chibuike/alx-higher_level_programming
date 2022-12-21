@@ -37,3 +37,6 @@ Tasks
 	- 1-square.py: contains a class Square that defines a square by:
 		- Private instance attribute: size
 		- Instantiation with size (no type/value verification)
+	- 2-square.py: contains a class Square that defines a square by:
+		- Private instance attribute: size
+		- Instantiation with optional size
