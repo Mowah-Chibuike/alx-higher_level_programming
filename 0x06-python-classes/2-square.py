@@ -19,6 +19,7 @@ class Square:
 
     @size.setter
     def size(self, size):
+        """Setter for the size private field"""
         if isinstance(size, int) is False:
             raise TypeError("size must be an integer")
         elif size < 0:
