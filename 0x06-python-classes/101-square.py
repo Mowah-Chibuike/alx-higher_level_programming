@@ -74,7 +74,7 @@ class Square:
     def __str__(self):
         res = ""
         if self.__size == 0:
-            return '\n'
+            return res
         for i in range(self.__position[1]):
             res += '\n'
 
@@ -86,7 +86,6 @@ class Square:
             else:
                 res += ('#' * self.__size)
         return res
-
 
     def area(self):
         """Returns the area of the square"""
