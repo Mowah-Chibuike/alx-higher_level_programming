@@ -79,3 +79,4 @@ Tasks
 
 - Advanced
 	- 100-singly_linked_list.py: contains the classes Node and SinglyLinkedList
+	- 101-square.py: contains a class Square that defines a square
