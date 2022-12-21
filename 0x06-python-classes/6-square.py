@@ -28,7 +28,7 @@ class Square:
             - if size is equal to 0, prints an empty line
 
     """
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """Initializer of every instance of the class Square"""
         self.size = size
         self.position = position
@@ -56,15 +56,18 @@ class Square:
     @position.setter
     def position(self, position):
         """Setter for the position private field"""
+        if len(position) != 2:
+            raise TypeError(
+                'position must be a tuple of 2 positive integers')
         for i in position:
             if isinstance(i, int) is False:
-                raise TypeError('position must be a tuple of 2 positive' + 
-                'integers')
+                raise TypeError(
+                    'position must be a tuple of 2 positive integers')
         self.__position = position
 
     def area(self):
         """Returns the area of the square"""
-        return(self.__size ** 2)
+        return (self.__size ** 2)
 
     def my_print(self):
         """prints in stdout the square with the character #"""
