@@ -34,3 +34,6 @@ Requirements
 Tasks
 - Mandatory
 	- 0-square.py: contains an empty class Square that defines a square
+	- 1-square.py: contains a class Square that defines a square by:
+		- Private instance attribute: size
+		- Instantiation with size (no type/value verification)
