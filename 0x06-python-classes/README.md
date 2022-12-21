@@ -50,3 +50,12 @@ Tasks
 			- property setter def size(self, value): to set it
                 - Instantiation with optional size
                 - Public instance method: def area(self): that returns the current square area
+	- 5-square.py: contains a class Square that defines a square by:
+                - Private instance attribute: size
+                        - property def size(self): to retrieve it
+                        - property setter def size(self, value): to set it
+                - Instantiation with optional size
+                - Public instance method: def area(self): that returns the current square area
+		- Public instance method: def my_print(self): that prints in stdout the square
+		with the character #:
+			- if size is equal to 0, print an empty line
