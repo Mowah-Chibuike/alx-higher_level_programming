@@ -59,3 +59,20 @@ Tasks
 		- Public instance method: def my_print(self): that prints in stdout the square
 		with the character #:
 			- if size is equal to 0, print an empty line
+	- 6-square.py: contains a class Square that defines a square by:
+                - Private instance attribute: size
+                        - property def size(self): to retrieve it
+                        - property setter def size(self, value): to set it
+		- Private instance attribute: position
+			- property def position(self): to retrieve it
+			- property setter def position(self, value): to set it:
+				- position must be a tuple of 2 positive integers, otherwise raise
+				a TypeError exception with the message position must be a tuple of
+				2 positive integers
+                - Instantiation with optional size and optional position
+                - Public instance method: def area(self): that returns the current square area
+                - Public instance method: def my_print(self): that prints in stdout the square
+                with the character #:
+                        - if size is equal to 0, print an empty line
+			- position should be use by using space - Don’t fill lines by spaces when
+			position[1] > 0
