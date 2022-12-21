@@ -56,7 +56,10 @@ class Square:
     @position.setter
     def position(self, position):
         """Setter for the position private field"""
-        if len(position) != 2:
+        if isinstance(position, tuple) is False:
+            raise TypeError(
+                'position must be a tuple of 2 positive integers')
+        elif len(position) != 2:
             raise TypeError(
                 'position must be a tuple of 2 positive integers')
         for i in position:
