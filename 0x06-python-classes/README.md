@@ -76,3 +76,6 @@ Tasks
                         - if size is equal to 0, print an empty line
 			- position should be use by using space - Don’t fill lines by spaces when
 			position[1] > 0
+
+- Advanced
+	- 100-singly_linked_list.py: contains the classes Node and SinglyLinkedList
