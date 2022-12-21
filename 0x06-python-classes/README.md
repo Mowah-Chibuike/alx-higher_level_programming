@@ -40,7 +40,13 @@ Tasks
 	- 2-square.py: contains a class Square that defines a square by:
 		- Private instance attribute: size
 		- Instantiation with optional size
-	- 2-square.py: contains a class Square that defines a square by:
+	- 3-square.py: contains a class Square that defines a square by:
                 - Private instance attribute: size
                 - Instantiation with optional size
 		- Public instance method: def area(self): that returns the current square area
+	- 4-square.py: contains a class Square that defines a square by:
+                - Private instance attribute: size
+			- property def size(self): to retrieve it
+			- property setter def size(self, value): to set it
+                - Instantiation with optional size
+                - Public instance method: def area(self): that returns the current square area
