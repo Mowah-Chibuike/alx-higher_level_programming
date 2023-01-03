@@ -40,3 +40,4 @@ Requirements
 Tasks
 - Mandatory
 	- 0. Simple rectangle: create an empty class Rectangle that defines a rectangle
+	- 1. Real definition of a rectangle: create  a class Rectangle that defines a rectangle
