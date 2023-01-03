@@ -99,7 +99,7 @@ an instance of Rectangle is deleted
         for i in range(self.__height):
             shape += delim
             for i in range(self.__width):
-                shape += str(getattr(self, print_symbol))
+                shape += str(getattr(self, 'print_symbol'))
             delim = '\n'
         return shape
 
