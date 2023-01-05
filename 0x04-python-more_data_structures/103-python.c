@@ -24,7 +24,7 @@ void print_python_bytes(PyObject *p)
 		printf("  first %ld bytes: ", obj->ob_base.ob_size + 1);
 	for (i = 0; i < 10; i++)
 	{
-		if (i == obj->ob_base.ob_size)
+		if (i == obj->ob_base.ob_size || i == 9)
 		{
 			printf("%.2x", obj->ob_sval[i] & 0xff);
 			break;
