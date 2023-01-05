@@ -31,7 +31,7 @@ class NQueens:
         for i, j in zip(list(range(row, -1, -1)), list(range(col, -1, -1))):
             if self.__board[i][j] == 1:
                 return False
-            
+
         """
         Then, check the diagonal on the right of the current position
         """
@@ -78,7 +78,8 @@ def print_simpler_solution(solutions):
             new_row = []
             for col, k in enumerate(j):
                 if k == 1:
-                    new_row.append([row, col])
+                    new_row.append(row)
+                    new_row.append(col)
             new_solution.append(new_row)
         print(new_solution)
 
