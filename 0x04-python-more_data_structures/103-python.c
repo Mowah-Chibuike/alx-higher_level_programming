@@ -31,8 +31,6 @@ void print_python_bytes(PyObject *p)
 		}
 		printf("%.2x ", obj->ob_sval[i] & 0xff);
 	}
-	if (obj->ob_base.ob_size < 10)
-		printf(" 00");
 	printf("\n");
 }
 
