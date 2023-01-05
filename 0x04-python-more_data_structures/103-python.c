@@ -25,11 +25,14 @@ void print_python_bytes(PyObject *p)
 	for (i = 0; i < 10; i++)
 	{
 		if (i == obj->ob_base.ob_size)
+		{
+			printf("%.2x", obj->ob_sval[i] & 0xff);
 			break;
+		}
 		printf("%.2x ", obj->ob_sval[i] & 0xff);
 	}
 	if (obj->ob_base.ob_size < 10)
-		printf("00");
+		printf(" 00");
 	printf("\n");
 }
 
