@@ -35,3 +35,4 @@ Requirements
 Tasks
 - Mandatory
 	- 0-lookup.py: contains a function that returns the list of available attributes and methods of an object
+	- 1-my_list.py: contains a class MyList that inherits from list
