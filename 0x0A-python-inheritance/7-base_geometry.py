@@ -23,7 +23,7 @@ the message <name> must be greater than 0
         """
         Validates the value argument
         """
-        if type(value) not in [int, float]:
+        if type(value) not in [int]:
             raise TypeError('{:s} must be an integer'.format(name))
         if value <= 0:
             raise ValueError('{:s} must be greater than 0'.format(name))
