@@ -10,7 +10,7 @@ class MyInt(int):
 != operators inverted
     """
     def __eq__(self, other):
-        return self.value != other
+        return super().__ne__(other)
 
     def __ne__(self, other):
-        return self.value == other
+        return super().__eq__(other)
