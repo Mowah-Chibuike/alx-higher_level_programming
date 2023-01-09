@@ -71,4 +71,4 @@ class Square(Rectangle):
         Rectangle.__init__(self, size, size)
 
     def __str__(self):
-        return "[Square] {p}/{p}".format(p = self.__size)
+        return "[Square] {p}/{p}".format(p=self.__size)
