@@ -36,3 +36,5 @@ Tasks
 - Mandatory
 	- 0-lookup.py: contains a function that returns the list of available attributes and methods of an object
 	- 1-my_list.py: contains a class MyList that inherits from list
+	- 2-is_same_class.py: contains a function that returns True if the object is exactlyan instance of a specified class
+	- 3-is_kind_of_class.py: contains a function that returns True if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class ; otherwise False.
