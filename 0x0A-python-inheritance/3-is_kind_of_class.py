@@ -10,4 +10,4 @@ def is_kind_of_class(obj, a_class):
     Returns True if obj is an instance of, or if obj is an instance of a \
 class that inherited from, the a_class ; otherwise False.
     """
-    return issubclass(obj, a_class)
+    return issubclass(type(obj), a_class)
