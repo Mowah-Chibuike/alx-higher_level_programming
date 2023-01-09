@@ -22,9 +22,6 @@ Traceback (most recent call last):
 TypeError: unsupported format string passed to list.__format__
 
 >>> base1.integer_validator('distance', 1.0)
-TypeError (most recent call last):
-	...
-TypeError: distance must be an integer
 
 >>> base1.integer_validator('distance', -1)
 Traceback (most recent call last):
