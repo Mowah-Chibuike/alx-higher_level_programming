@@ -10,7 +10,7 @@ def add_attribute(obj, name, value):
     Prototype: def add_attribute(obj, name, value)
     Raises a TypeError exception if the object can't have the new attribute
     """
-    if not hasattr(obj, '__setattr__'):
+    if hasattr(obj, '__slots__'):
         raise TypeError("can't add new attribute")
     if type(obj) in [int, str, dict, set, list, type, object]:
         raise TypeError("can't add new attribute")
