@@ -12,5 +12,7 @@ def add_attribute(obj, name, value):
     """
     if not hasattr(obj, '__setattr__'):
         raise TypeError("can't add new attribute")
+    if hasattr(obj, name):
+        raise TypeError("can't add new attribute")
 
     setattr(obj, name, value)
