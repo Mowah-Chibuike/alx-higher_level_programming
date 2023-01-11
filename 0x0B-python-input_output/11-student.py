@@ -47,8 +47,5 @@ ttributes of the Student instance
         """
         replaces all attributes of the Student instance
         """
-        for i in range(len(self.__dict__)):
-            self.__dict__.popitem()
-
         for name, value in json.items():
             self.__dict__.__setitem__(name, value)
