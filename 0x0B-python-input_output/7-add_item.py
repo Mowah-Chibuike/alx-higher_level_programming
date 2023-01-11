@@ -19,7 +19,7 @@ def add_item():
             is_empty = True
 
     if is_empty:
-        new = []
+        new = args
     else:
         new = load_from_json_file("add_item.json") + args
     save_to_json_file(new, "add_item.json")
