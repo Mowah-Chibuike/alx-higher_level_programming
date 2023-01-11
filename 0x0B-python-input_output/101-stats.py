@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 import sys
-
+"""
+Module contains the Store class and the print_stats function
+"""
 
 class Store:
     """
