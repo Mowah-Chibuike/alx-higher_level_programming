@@ -14,8 +14,9 @@ def add_item():
     from sys import argv
     args = argv[1:]
     is_empty = False
-    with open("add_item.json", "r", encoding='utf-8') as json_file:
-        if json_file.readline() == "":
+    with open("add_item.json", "a+", encoding='utf-8') as json_file:
+        json_file.seek(0, 0)
+        if json_file.read() == "":
             is_empty = True
 
     if is_empty:
