@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import json
 """
 Module contains the add_item function
 """
