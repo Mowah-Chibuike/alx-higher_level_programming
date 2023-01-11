@@ -25,6 +25,9 @@ class Store:
 
 
 def print_stats():
+    """
+    Prints stats from a log
+    """
     store = Store()
     count = 0
     try:
