@@ -144,7 +144,7 @@ attributes, each with their own setter and getter:
                     self.x = value
                 elif key == "y":
                     self.y = value
-    
+
     def to_dictionary(self):
         """
         Returns a dictionary representation of itself
