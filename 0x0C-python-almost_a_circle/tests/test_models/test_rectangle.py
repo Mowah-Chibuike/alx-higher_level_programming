@@ -180,5 +180,5 @@ class TestRectangle(unittest.TestCase):
         list_obj = [item.to_dictionary() for item in from_file]
         self.assertEqual(list_obj, expected)
         with open("Rectangle.json", "w+", encoding='utf-8') as a_file:
-            pass
+            a_file.write("")
         self.assertEqual(Rectangle.load_from_file(), [])
