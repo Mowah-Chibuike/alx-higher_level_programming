@@ -7,13 +7,14 @@ from models.rectangle import Rectangle
 
 class Square(Rectangle):
     """
-    Square a subclass of the class Rectangle
+    Square is a subclass of Rectangle
     """
     def __init__(self, size, x=0, y=0, id=None):
-        """
-        run when an instance is created
-        """
         Rectangle.__init__(self, size, size, x, y, id)
+
+    def __str__(self):
+        return '[Square] ({}) {}/{} - {}'.format(
+            self.id, self.x, self.y, self.width)
 
     @property
     def size(self):
@@ -25,41 +26,39 @@ class Square(Rectangle):
     @size.setter
     def size(self, value):
         """
-        setter for the size property
+        setter for the width and height of an instance
         """
-        if type(value) not in [int, float]:
-            raise TypeError('width must be an integer')
-        elif value < 1:
-            raise ValueError('width must be > 0')
         self.width = self.height = value
-
-    def __str__(self):
-        """
-        run when class is usedd with str function or printed with the print \
-function
-        """
-        return "[Square] ({}) \
-{}/{} - {}".format(self.id, self.x, self.y, self.width)
 
     def update(self, *args, **kwargs):
         """
-        updates the attributes of the Square class
+        updates the attributes of the Square instance
         """
-        if len(args) > 0:
-            Rectangle.update(
-                self, args[0], args[1], args[1], args[2], args[3])
+        if args:
+            for i, value in enumerate(args):
+                if i == 0:
+                    Rectangle.update(self, value)
+                elif i == 1:
+                    self.size = value
+                elif i == 2:
+                    self.x = value
+                elif i == 3:
+                    self.y = value
         else:
-            new_dict = {}
+            attr_dict = {}
             for key, value in kwargs.items():
                 if key == "size":
                     self.size = value
                 else:
-                    new_dict[key] = value
-            Rectangle.update(self, **new_dict)
+                    attr_dict[key] = value
+            Rectangle.update(self, **attr_dict)
 
     def to_dictionary(self):
-        rect = Rectangle.to_dictionary(self)
+        """
+        Returns dictionary representation of the instance
+        """
+        attr_dict = Rectangle.to_dictionary(self)
         for key in ["width", "height"]:
-            rect.pop(key)
-        rect["size"] = self.size
-        return rect 
+            attr_dict.pop(key)
+        attr_dict["size"] = self.size
+        return attr_dict

@@ -10,10 +10,9 @@ Learning Objectives
 	- How to handle named arguments in a function
 
 Requirements
-- General
-	- Allowed editors: vi, vim, emacs
-	- Ubuntu 20.4 LTS using python3(version 3.8.5)
-
 - Python Scripts
-	- Your code should use pycodestyle(version 2.8.*)
-	- All modules, classes and functions should be documented
+	- Allowed editors: vi, vim, emacs
+	- Ubuntu 20.04 LTS using python3(version 3.8.5)
+	- The first line of all your files should be exactly #!/usr/bin/python3
+	- Your code shouldd use the pycodestyle(version 2.8.*)
+	- All modules, classes, functions and methods should be documented
