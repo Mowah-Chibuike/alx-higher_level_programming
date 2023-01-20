@@ -11,9 +11,11 @@ class TestBase(unittest.TestCase):
     """
     contains unittests for the Base Class
     """
-    def test_init(self):
+    def test_automatic_id(self):
         new = Base()
         self.assertEqual(new.id, 1)
+
+    def test_init(self):
         self.assertEqual(Base(7).id, 7)
         self.assertEqual(Base().id, 2)
 
