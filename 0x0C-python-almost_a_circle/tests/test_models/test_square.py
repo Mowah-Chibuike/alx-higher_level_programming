@@ -137,3 +137,25 @@ class TestSquare(unittest.TestCase):
     def test_dictionary(self):
         expected = {"id": 89, "size": 4, "x": 1, "y": 1}
         self.assertEqual(self.square.to_dictionary(), expected)
+
+    def test_save_to_file(self):
+        expected = Rectangle.to_json_string([
+            {"y": 8, "x": 2, "id": 89, "size": 10},
+            {"y": 0, "x": 0, "id": 2, "size": 2}])
+        r1 = Square(10, 2, 8, 89)
+        r2 = Square(2, 0, 0, 2)
+        Square.save_to_file([r1, r2])
+
+        with open("Square.json", "r", encoding='utf-8') as a_file:
+            self.assertEqual(json.loads(a_file.read()), json.loads(expected))
+
+    def test_load_from_file(self):
+        expected = [
+                {"y": 8, "x": 2, "id": 89, "size": 10},
+                {"y": 0, "x": 0, "id": 2, "size": 2}]
+        from_file = Rectangle.load_from_file()
+        list_obj = [item.to_dictionary() for item in from_file]
+        self.assertEqual(list_obj, expected)
+        with open("Rectangle.json", "w+", encoding='utf-8') as a_file:
+            a_file.write("")
+        self.assertEqual(Rectangle.load_from_file(), [])
