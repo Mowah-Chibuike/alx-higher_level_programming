@@ -2,6 +2,7 @@
 """
 Module contains the TestSquare class
 """
+import json
 import unittest
 from io import StringIO
 from unittest.mock import patch
@@ -139,7 +140,7 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(self.square.to_dictionary(), expected)
 
     def test_save_to_file(self):
-        expected = Rectangle.to_json_string([
+        expected = Square.to_json_string([
             {"y": 8, "x": 2, "id": 89, "size": 10},
             {"y": 0, "x": 0, "id": 2, "size": 2}])
         r1 = Square(10, 2, 8, 89)
@@ -153,9 +154,9 @@ class TestSquare(unittest.TestCase):
         expected = [
                 {"y": 8, "x": 2, "id": 89, "size": 10},
                 {"y": 0, "x": 0, "id": 2, "size": 2}]
-        from_file = Rectangle.load_from_file()
+        from_file = Square.load_from_file()
         list_obj = [item.to_dictionary() for item in from_file]
         self.assertEqual(list_obj, expected)
-        with open("Rectangle.json", "w+", encoding='utf-8') as a_file:
+        with open("Square.json", "w+", encoding='utf-8') as a_file:
             a_file.write("")
-        self.assertEqual(Rectangle.load_from_file(), [])
+        self.assertEqual(Square.load_from_file(), [])
