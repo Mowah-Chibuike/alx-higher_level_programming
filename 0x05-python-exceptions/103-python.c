@@ -64,6 +64,11 @@ void print_python_list(PyObject *p)
 	const char *tp_name;
 
 	printf("[*] Python list info\n");
+	if (!PyList_CheckExact(ll))
+	{
+		printf("  [ERROR] Invalid List Object\n");
+		return;
+	}
 	printf("[*] Size of the Python List = %ld\n", ob_base.ob_size);
 	printf("[*] Allocated = %ld\n", ll->allocated);
 	for (i = 0; i < ob_base.ob_size; i++)
