@@ -49,7 +49,7 @@ void print_python_float(PyObject *p)
 		printf("[ERROR] Invalid List Object\n");
 		return;
 	}
-	printf("  value: %.*f\n", DBL_DIG, obj->ob_fval);
+	printf("  value: %.*f\n", DBL_DIG-1, obj->ob_fval);
 }
 
 /**
