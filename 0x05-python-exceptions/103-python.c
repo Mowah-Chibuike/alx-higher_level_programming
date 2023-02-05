@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "Python.h"
+#include <float.h>
 
 /**
  * print_python_bytes - prints info about a python bytes object
@@ -48,7 +49,7 @@ void print_python_float(PyObject *p)
 		printf("[ERROR] Invalid List Object\n");
 		return;
 	}
-	printf("  value: %f\n", obj->ob_fval);
+	printf("  value: %.*f\n", DBL_DIG, obj->ob_fval);
 }
 
 /**
