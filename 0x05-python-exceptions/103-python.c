@@ -41,7 +41,9 @@ void print_python_bytes(PyObject *p)
  */
 void print_python_float(PyObject *p)
 {
+	int ipart;
 	PyFloatObject *obj = (PyFloatObject *)p;
+	double value;
 
 	printf("[.] float object info\n");
 	if (!PyFloat_CheckExact(obj))
@@ -49,7 +51,18 @@ void print_python_float(PyObject *p)
 		printf("[ERROR] Invalid List Object\n");
 		return;
 	}
-	printf("  value: %.*f\n",DBL_DIG+2, obj->ob_fval);
+	value = obj->ob_fval;
+	ipart = (int)value;
+	value = value - ipart;
+	printf("%d.", ipart);
+	while (value > 0.0)
+	{
+		value = value * 10;
+		ipart = (int)ipart;
+		value = value - ipart;
+		printf("%d", ipart);
+	}
+	printf("\n");
 }
 
 /**
