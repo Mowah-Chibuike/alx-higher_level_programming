@@ -38,3 +38,4 @@
 - 12-no_cheating.sql: updates the score of Bob to 10 in the table second_table.
 - 13-change_class.sql: a script that removes all records with a score <= 5 in the table second_table of the database hbtn_0c_0 in your MySQL server.
 - 14-average.sql: a script that computes the score average of all records in the table second_table of the database hbtn_0c_0 in your MySQL server.
+- 15-groups.sql:  a script that lists the number of records with the same score in the table second_table of the database hbtn_0c_0 in your MySQL server.
