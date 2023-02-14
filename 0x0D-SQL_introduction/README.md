@@ -35,3 +35,4 @@
 - 9-full_creation.sql: a script that creates a table second_table in the database hbtn_0c_0 in your MySQL server and add multiples rows.
 - 10-top_score.sql: a script that lists all records of the table second_table of the database hbtn_0c_0 in your MySQL server.
 - 11-best_score.sql: a script that lists all records with a score >= 10 in the table second_table of the database hbtn_0c_0 in your MySQL server.
+- 12-no_cheating.sql: updates the score of Bob to 10 in the table second_table.
