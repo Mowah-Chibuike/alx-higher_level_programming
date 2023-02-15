@@ -40,3 +40,7 @@
 - 14-average.sql: a script that computes the score average of all records in the table second_table of the database hbtn_0c_0 in your MySQL server.
 - 15-groups.sql:  a script that lists the number of records with the same score in the table second_table of the database hbtn_0c_0 in your MySQL server.
 - 16-no_link.sql: a script that lists all records of the table second_table of the database hbtn_0c_0 in your MySQL server.
+
+
+## Advanced
+- 100-move_to_utf8.sql: a script that converts hbtn_0c_0 database to UTF8 (utf8mb4, collate utf8mb4_unicode_ci) in your MySQL server.
