@@ -27,3 +27,4 @@
 - 4-never_empty.sql: a script that creates the table id_not_null on your MySQL server.
 - 5-unique_id.sql: a script that creates the table unique_id on your MySQL server.
 - 6-states.sql:  a script that creates the database hbtn_0d_usa and the table states (in the database hbtn_0d_usa) on your MySQL server.
+- 7-cities.sql: a script that creates the database hbtn_0d_usa and the table cities (in the database hbtn_0d_usa) on your MySQL server.
