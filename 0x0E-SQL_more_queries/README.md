@@ -29,3 +29,4 @@
 - 6-states.sql:  a script that creates the database hbtn_0d_usa and the table states (in the database hbtn_0d_usa) on your MySQL server.
 - 7-cities.sql: a script that creates the database hbtn_0d_usa and the table cities (in the database hbtn_0d_usa) on your MySQL server.
 - 8-cities_of_california_subquery.sql: a script that lists all the cities of California that can be found in the database hbtn_0d_usa.
+- 9-cities_by_state_join.sql: a script that lists all cities contained in the database hbtn_0d_usa.
