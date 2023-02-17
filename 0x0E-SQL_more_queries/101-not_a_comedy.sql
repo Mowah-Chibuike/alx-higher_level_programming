@@ -1,5 +1,4 @@
 -- uses the hbtn_0d_tvshows database to list all genres not linked to the show Dexter
-SET sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
 SELECT DISTINCT shows.title
 FROM tv_shows AS shows
 LEFT JOIN tv_show_genres AS genres
