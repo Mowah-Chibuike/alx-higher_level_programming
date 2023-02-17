@@ -8,7 +8,7 @@ INNER JOIN tv_genres AS gen
 ON genres.genre_id = gen.id
 WHERE gen.id NOT IN (
 	SELECT gen.id
-	FROM tv_shows as shows
+	FROM tv_shows AS shows
 	INNER JOIN tv_show_genres AS genres
 	ON shows.id = genres.show_id
 	INNER JOIN tv_genres AS gen
