@@ -1,11 +1,11 @@
 #!/usr/bin/node
 
 const x = Number(process.argv[2]);
-const strip = '';
+let strip = '';
 
 if (x) {
   for (let i = 0; i < x; i++) {
-    strip.concat('X');
+    strip += 'X';
   }
   for (let i = 0; i < x; i++) {
     console.log(strip);
