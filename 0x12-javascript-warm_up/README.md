@@ -41,3 +41,4 @@
 - 9-add.js: a script that prints the addition of 2 integers
 - 10-factorial.js: a script that computes and prints a factorial
 - 11-second_biggest.js: a script that searches the second biggest integer in the list of arguments.
+- 13-add.js: a function that returns the addition of 2 integers.
