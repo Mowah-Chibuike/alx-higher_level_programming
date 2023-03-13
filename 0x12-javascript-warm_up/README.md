@@ -45,3 +45,4 @@
 
 ### Advanced
 - 100-let_me_const.js: a file that modifies the value of myVar to 333
+- 101-call_me_moby.js: a function that executes x times a function.
