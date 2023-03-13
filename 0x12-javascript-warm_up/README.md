@@ -37,3 +37,6 @@
 - 5-to_integer.js: a script that prints My number: <first argument converted in integer> if the first argument can be converted to an integer
 - 6-multi_languages_loop.js: a script that prints 3 lines: (like 1-multi_languages.js) but by using an array of string and a loop
 - 7-multi_c.js: a script that prints x times “C is fun”
+- 8-square.js: a script that prints a square
+- 9-add.js: a script that prints the addition of 2 integers
+- 10-factorial.js: a script that computes and prints a factorial
