@@ -42,3 +42,6 @@
 - 10-factorial.js: a script that computes and prints a factorial
 - 11-second_biggest.js: a script that searches the second biggest integer in the list of arguments.
 - 13-add.js: a function that returns the addition of 2 integers.
+
+### Advanced
+- 100-let_me_const.js: a file that modifies the value of myVar to 333
