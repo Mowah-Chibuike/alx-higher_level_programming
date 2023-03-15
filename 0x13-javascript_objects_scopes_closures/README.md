@@ -26,3 +26,4 @@
 - 5-square.js: contains a class Square that defines a square and inherits from Rectangle
 - 6-square.js: contains a class Square that defines a square and inherits from Square of 5-square.js
 - 7-occurrences.js: a function that returns the number of occurrences in a list
+- 8-esrever.js: a function that returns the reversed version of a list
