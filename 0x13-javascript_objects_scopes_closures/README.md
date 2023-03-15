@@ -22,3 +22,4 @@
 - 1-rectangle.js: contains class Rectangle that defines a rectangle
 - 2-rectangle.js: contains class Rectangle that defines a rectangle
 - 3-rectangle.js: contains class Rectangle that defines a rectangle
+- 4-rectangle.js: contains class Rectangle that defines a rectangle
