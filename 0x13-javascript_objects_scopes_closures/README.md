@@ -18,4 +18,5 @@
 
 ## Tasks
 ### Mandatory
-- 0-rectangle.js: defines a rectangle
+- 0-rectangle.js: contains class Rectangle that defines an empty rectangle
+- 1-rectangle.js: contains class Rectangle that defines a rectangle
