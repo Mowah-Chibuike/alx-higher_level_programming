@@ -32,3 +32,4 @@
 
 ### Advanced
 - 100-map.js: a script that imports an array and computes a new array.
+- 101-sorted.js: a script that imports a dictionary of occurrences by user id and computes a dictionary of user ids by occurrence.
