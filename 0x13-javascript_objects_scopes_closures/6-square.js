@@ -1,4 +1,4 @@
-#!/usr/bin/mode
+#!/usr/bin/node
 
 const parentSquare = require('./5-square.js');
 
