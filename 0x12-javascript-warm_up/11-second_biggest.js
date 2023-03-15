@@ -3,7 +3,6 @@
 const args = process.argv;
 const list = [];
 
-console.log(args);
 function compareFunc (a, b) {
   if (a < b) {
     return -1;
@@ -22,6 +21,5 @@ if (args.length < 4) {
     length++;
   }
   list.sort(compareFunc);
-  console.log(list);
   console.log(list[length - 2]);
 }
