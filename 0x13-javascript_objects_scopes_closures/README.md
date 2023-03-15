@@ -23,3 +23,4 @@
 - 2-rectangle.js: contains class Rectangle that defines a rectangle
 - 3-rectangle.js: contains class Rectangle that defines a rectangle
 - 4-rectangle.js: contains class Rectangle that defines a rectangle
+- 5-square.js: contains a class Square that defines a square and inherits from Rectangle
