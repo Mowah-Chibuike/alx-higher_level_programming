@@ -12,7 +12,7 @@ if __name__ == "__main__":
     dbname = argv[3]
 
     db = connect(host="localhost", user=username, password=password,
-                 database=dbname, port=3306);
+                 database=dbname, port=3306)
     cur = db.cursor()
     cur.execute("SELECT * FROM states ORDER BY states.id")
     res = cur.fetchall()
