@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-lists all states from the database hbtn_0e_0_usa
+lists all states with a name starting with N (upper N) from the database
+hbtn_0e_0_usa
 """
 
 if __name__ == "__main__":
@@ -14,9 +15,9 @@ if __name__ == "__main__":
     db = connect(host="localhost", user=username, password=password,
                  database=dbname, port=3306)
     cur = db.cursor()
-    cur.execute("SELECT * FROM states\
+    cur.execute("""SELECT * FROM states\
                 WHERE states.name LIKE 'N%'\
-                ORDER BY states.id")
+                ORDER BY id""")
     res = cur.fetchall()
     for row in res:
         print(row)
