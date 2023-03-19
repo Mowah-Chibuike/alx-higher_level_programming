@@ -17,6 +17,5 @@ if __name__ == "__main__":
         engine = create_engine("\
 mysql+mysqldb://{}:{}@localhost:3306/{}".format(username, password, dbname))
         session = Session(bind=engine)
-        states = session.query(State).all()
-        for state in states:
-            print("{}: {}".format(state.id, state.name))
+        first_state = session.query(State).first()
+        print("{}: {}".format(first_state.id, first_state.name))
