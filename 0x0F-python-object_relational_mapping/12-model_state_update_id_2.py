@@ -17,6 +17,6 @@ if __name__ == "__main__":
         engine = create_engine('\
 mysql+mysqldb://{}:{}@localhost:3306/{}'.format(username, password, dbname))
         session = Session(bind=engine)
-        state = session.query(State).filter(User.id == 2).one_or_none()
+        state = session.query(State).filter(State.id == 2).one_or_none()
         if state is not None:
             state.name = 'New Mexico'
