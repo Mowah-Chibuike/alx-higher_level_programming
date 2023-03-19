@@ -7,7 +7,7 @@ if __name__ == "__main__":
     from sys import argv
     from MySQLdb import connect
 
-    if (len(argv) == 5):
+    if (len(argv) >= 5):
         username = argv[1]
         password = argv[2]
         dbname = argv[3]
@@ -17,8 +17,8 @@ if __name__ == "__main__":
                      password=password, database=dbname)
         cursor = db.cursor()
         cursor.execute("""SELECT GROUP_CONCAT(cities.name SEPARATOR ', ')\
-                       FROM states\
-                       INNER JOIN cities ON states.id = cities.state_id\
+                       FROM cities\
+                       INNER JOIN states ON states.id = cities.state_id\
                        WHERE states.name = %s\
                        GROUP BY states.id\
                        ORDER BY cities.id""", (state_name,))
@@ -27,3 +27,5 @@ if __name__ == "__main__":
             print(res[0])
         else:
             print()
+        cursor.close()
+        db.close()
