@@ -24,7 +24,7 @@ if __name__ == "__main__":
                        WHERE name = %s)\
                        ORDER BY id;""", (state_name,))
         res = cursor.fetchone()
-        if res:
+        if res and res[0]:
             print(res[0])
         else:
             print()
