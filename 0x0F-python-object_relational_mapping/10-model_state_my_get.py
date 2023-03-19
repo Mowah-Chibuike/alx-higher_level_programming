@@ -19,7 +19,8 @@ if __name__ == "__main__":
         engine = create_engine("\
 mysql+mysqldb://{}:{}@localhost:3306/{}".format(username, password, dbname))
         session = Session(bind=engine)
-        state = session.query(State).filter(text("name=:name")).params(name=state_name).first()
+        state = session.query(State).filter(
+                text("name=:name")).params(name=state_name).first()
         if state is not None:
             print(state.id)
         else:
