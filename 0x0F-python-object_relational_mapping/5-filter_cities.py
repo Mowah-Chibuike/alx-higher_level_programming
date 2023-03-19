@@ -16,12 +16,13 @@ if __name__ == "__main__":
         db = connect(host="localhost", port=3306, user=username,
                      password=password, database=dbname)
         cursor = db.cursor()
-        cursor.execute("""SELECT GROUP_CONCAT(cities.name SEPARATOR ', ')\
+        cursor.execute("""SELECT GROUP_CONCAT(name SEPARATOR ', ')\
                        FROM cities\
-                       INNER JOIN states ON states.id = cities.state_id\
-                       WHERE states.name = %s\
-                       GROUP BY states.id\
-                       ORDER BY cities.id""", (state_name,))
+                       WHERE state_id = (\
+                       SELECT id\
+                       FROM states\
+                       WHERE name = %s)\
+                       ORDER BY id;""", (state_name,))
         res = cursor.fetchone()
         if res:
             print(res[0])
