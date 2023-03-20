@@ -19,5 +19,5 @@ instances of State
     id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
 
-    cities = relationship('City', back_populates='state',
+    cities = relationship('City', backref='state',
                           cascade='all, delete-orphan')
