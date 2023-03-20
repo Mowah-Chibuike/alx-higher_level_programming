@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 lists all State objects, and corresponding City objects, contained in the
-database hbtn_0e_101_usa
+database hbtn_0e_101_usa using the SQLAlchemy module
 """
 
 if __name__ == "__main__":
