@@ -20,6 +20,7 @@ mysql+mysqldb://{}:{}@localhost:3306/{}".format(username, password, dbname))
         session = Session(bind=engine)
         cities = session.query(
                 State.name, City).select_from(City).join(
-                        State, City.state_id == State.id).order_by(City.id).all()
+                        State,
+                        City.state_id == State.id).order_by(City.id).all()
         for state_name, city in cities:
             print("{}: ({}) {}".format(state_name, city.id, city.name))
