@@ -15,8 +15,11 @@ if __name__ == "__main__":
     db = connect(host="localhost", user=username, password=password,
                  database=dbname, port=3306)
     cur = db.cursor()
+    cur.execute("""ALTER TABLE states\
+                CONVERT TO CHARACTER SET utf8mb4\
+                COLLATE utf8mb4_bin""")
     cur.execute("""SELECT * FROM states\
-                WHERE states.name LIKE 'N%'\
+                WHERE name LIKE 'N%'\
                 ORDER BY id""")
     res = cur.fetchall()
     for row in res:
