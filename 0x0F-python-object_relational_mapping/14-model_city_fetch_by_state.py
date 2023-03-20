@@ -18,9 +18,8 @@ if __name__ == "__main__":
         engine = create_engine("\
 mysql+mysqldb://{}:{}@localhost:3306/{}".format(username, password, dbname))
         session = Session(bind=engine)
-        State.cities = relationship("City", back_populates="states")
         cities = session.query(
                 State.name, City).select_from(City).join(
-                        State).order_by(City.id).all()
+                        State, City.state_id == State.id).order_by(City.id).all()
         for state_name, city in cities:
             print("{}: ({}) {}".format(state_name, city.id, city.name))
