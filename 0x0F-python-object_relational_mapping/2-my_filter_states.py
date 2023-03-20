@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-lists all states with a name starting with N (upper N) from the database
-hbtn_0e_0_usa
+takes in an argument and displays all values in the states table of
+hbtn_0e_0_usa where name matches the argument.
 """
 
 if __name__ == "__main__":
@@ -16,6 +16,9 @@ if __name__ == "__main__":
     db = connect(host="localhost", user=username, password=password,
                  database=dbname, port=3306)
     cur = db.cursor()
+    cur.execute("ALTER TABLE states\
+                 CONVERT TO CHARACTER SET utf8mb4\
+                 COLLATE utf8mb4_bin")
     cur.execute("SELECT * FROM states\
                 WHERE states.name='{}'\
                 ORDER BY states.id".format(state_name))
