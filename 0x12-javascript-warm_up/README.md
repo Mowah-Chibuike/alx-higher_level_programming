@@ -31,3 +31,4 @@
 	The first line: “C is fun”
 	The second line: “Python is cool”
 	The third line: “JavaScript is amazing”
+- 2-arguments.js: a script that prints a message depending of the number of arguments passed
