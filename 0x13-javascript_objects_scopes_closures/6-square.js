@@ -9,11 +9,15 @@ module.exports = class Square extends Square0 {
 
   charPrint (c) {
     let strip = '';
-    for (let i = 0; i < this.width; i++) {
-      strip += c;
-    }
-    for (let i = 0; i < this.width; i++) {
-      console.log(strip);
+    if (c) {
+      for (let i = 0; i < this.width; i++) {
+        strip += c;
+      }
+      for (let i = 0; i < this.width; i++) {
+        console.log(strip);
+      }
+    } else {
+      this.print();
     }
   }
 };
