@@ -10,10 +10,10 @@ module.exports = class Rectangle {
 
   print () {
     let strip = '';
-    for (let i = 0; i < (this.width ? this.width : 0); i++) {
+    for (let i = 0; i < this.width; i++) {
       strip += 'X';
     }
-    for (let i = 0; i < (this.height ? this.height : 0); i++) {
+    for (let i = 0; i < this.height; i++) {
       console.log(strip);
     }
   }
