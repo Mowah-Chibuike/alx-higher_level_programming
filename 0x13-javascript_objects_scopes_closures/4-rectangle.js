@@ -20,7 +20,7 @@ module.exports = class Rectangle {
 
   rotate () {
     const temp = this.width;
-    this.width = this.rectangle;
+    this.width = this.height;
     this.height = temp;
   }
 
