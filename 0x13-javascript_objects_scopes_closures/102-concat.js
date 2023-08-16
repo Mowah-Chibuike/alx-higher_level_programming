@@ -10,7 +10,7 @@ fs.readFile(readA, (err, data) => {
     throw err;
   }
   const text = data.toString();
-  fs.writeFile(write, text, (err) => { throw err; });
+  fs.writeFile(write, text, () => {});
 });
 
 fs.readFile(readB, (err, data) => {
@@ -18,5 +18,5 @@ fs.readFile(readB, (err, data) => {
     throw err;
   }
   const text = data.toString();
-  fs.appendFile(write, text, (err) => { throw err; });
+  fs.appendFile(write, text, () => {});
 });
