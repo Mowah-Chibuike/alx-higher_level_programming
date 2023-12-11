@@ -7,5 +7,5 @@ if (argvLength > 3) {
   const numbers = process.argv.map((ele) => Number(ele)).slice(2).sort((a, b) => a - b);
   console.log(numbers[numbers.length - 2]);
 } else {
-  console.log(argv[0]);
+  console.log(argvLength[0]);
 }
