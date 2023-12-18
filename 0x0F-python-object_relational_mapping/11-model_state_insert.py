@@ -6,7 +6,7 @@ adds the State object “Louisiana” to the database hbtn_0e_6_usa
 if __name__ == "__main__":
     from sys import argv
     from sqlalchemy import create_engine, URL
-    from sqlalchemy.orm import Session
+    from sqlalchemy.orm import sessionmaker
     from model_state import Base, State
 
     if len(argv) > 3:
@@ -25,10 +25,10 @@ if __name__ == "__main__":
 
         engine = create_engine(url)
         Base.metadata.create_all(engine)
-        session = Session(bind=engine)
+        Session = sessionmaker(engine)
 
-        new_state = State(name='Louisiana')
-        session.add(new_state)
-        session.commit()
-
-        print(new_state.id)
+        with Session() as session:
+            new_state = State(name='Louisiana')
+            session.add(new_state)
+            session.commit()
+            print(new_state.id)
