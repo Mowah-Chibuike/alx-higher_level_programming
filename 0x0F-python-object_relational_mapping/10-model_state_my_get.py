@@ -7,7 +7,7 @@ if __name__ == "__main__":
     from sqlalchemy import create_engine, URL, text
     from sqlalchemy.orm import Session
     from model_state import Base, State
-    from sqlalchemy.exc import NoResultFound 
+    from sqlalchemy.exc import NoResultFound
 
     if len(argv) > 4:
         user = argv[1]
@@ -27,7 +27,8 @@ if __name__ == "__main__":
         Base.metadata.create_all(engine)
         session = Session(bind=engine)
         try:
-            state = session.query(State).filter(State.name == search_name).one()
+            state = session.query(State).filter(State.name == search_name).\
+                one()
             print(f"{state.id}")
         except NoResultFound:
             print('Not found')
