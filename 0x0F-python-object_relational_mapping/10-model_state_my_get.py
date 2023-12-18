@@ -30,4 +30,4 @@ if __name__ == "__main__":
             state = session.query(State).filter(State.name == search_name).one()
             print(f"{state.id}")
         except NoResultFound:
-            print('Nothing')
+            print('Not found')
